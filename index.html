@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Italian Greetings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Learn Italian</h1>
+    <nav>
+      <a href="index.html" class="active">Greetings</a>
+      <a href="places.html">Places</a>
+      <a href="verbs.html">Verbs</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2> Greetings</h2>
+    <div class="words" id="words"></div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="word"></h2>
+      <p id="meaning"></p>
+      <img id="image" src="" alt="Italian word">
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    const words = [
+      { word: "Ciao", meaning: "Hello/Goodbye", image: "https://images.pexels.com/photos/5063095/pexels-photo-5063095.jpeg" },
+      { word: "Buongiorno", meaning: "Good morning", image: "https://images.pexels.com/photos/4937409/pexels-photo-4937409.jpeg" },
+      { word: "Buonasera", meaning: "Good evening", image: "https://images.pexels.com/photos/1210555/pexels-photo-1210555.jpeg" }
+    ];
+    renderWords(words);
+  </script>
+</body>
+</html>
